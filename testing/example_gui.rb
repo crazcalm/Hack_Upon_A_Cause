@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+require_relative "login.rb"
 require 'gtk2'
 
 window = Gtk::Window.new
@@ -42,7 +43,25 @@ hbox1.pack_start(pass,true,true, 0)
 
 button = Gtk::Button.new("Submit")
 button.signal_connect("clicked") do
-puts entry.text
+
+test = Google_login.new
+test.initionalize(entry.text, pass.text)
+test.login
+test.contacts_hash
+#puts "test.contacts"
+#pp test.contacts
+
+
+#test = Google_login.new
+#test.initionalize
+#test.login
+test.messages_hash
+#puts "test.messages"
+#pp test.messages
+
+#test.messages.each {|x,y| puts x.class}
+test.write_to_file
+
 end
 vbox.pack_start(button, true, true, 0)
 button.can_default = true
@@ -50,3 +69,5 @@ button.grab_default
 
 window.show_all
 Gtk.main
+
+

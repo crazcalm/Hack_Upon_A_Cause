@@ -1,0 +1,13 @@
+Person: +16502651193
+Type: recieved call
+Time: 
+Text: Welcome to Google Voice. Google Voice will help you manage your voicemails more effectively by saving them online and transcribing messages for you. You can also set custom voicemail greetings for different callers and even make cheap international calls. We hope you enjoy using Google Voice.
+
+Continued Communication:
+Text: 
+Communication:
+Text: 
+
+
+Continued Communication:
+Text: 
