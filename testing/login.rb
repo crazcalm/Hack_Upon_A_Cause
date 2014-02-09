@@ -1,10 +1,11 @@
 require "mechanize"
 
 class Google_login
-	attr_accessor :email, :password, :agent
+	attr_accessor :email, :password, :agent, :contacts
 
 	def initionalize(email = nil, password=nil)
 		@agent = Mechanize.new
+		@contacts = nil
 		
 		print "Email: "
 		@email = gets.chomp
@@ -32,9 +33,9 @@ class Google_login
 		id_keys = []
 		data["contacts"].each {|key, value| id_keys << key}
 
-		puts "\n\nid_keys: "
-		pp id_keys
-		puts "\n"
+		#puts "\n\nid_keys: "
+		#pp id_keys
+		#puts "\n"
 
 		new_hash = Hash.new
 		id_keys.each do |key|
@@ -59,7 +60,7 @@ class Google_login
 			
 			new_hash[future_key] = tempt2
 		end
-	new_hash
+	@contacts = new_hash
 	end
 			
 
@@ -73,8 +74,9 @@ end
 test = Google_login.new
 test.initionalize
 test.login
-data = test.contacts_hash
-pp data
+test.contacts_hash
+puts "test.contacts"
+pp test.contacts
 
 
 
