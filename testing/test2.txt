@@ -1,14 +1,18 @@
+
+
 Person: +19083708992
 Type: sent sms
-Time: 
+Time: 2/9/14 6:55 PM
 Text: Miss you boo! How are you
 
 Continued Communication:
 Time: 2/9/14 6:55 PM
 Text: Miss you boo! How are you
+
+
 Person: +16463623973
 Type: recieved call
-Time: 
+Time: 2/9/14 6:36 PM
 Text: Need sleep!
 
 Continued Communication:
@@ -19,17 +23,21 @@ Text: Need sleep!
 Continued Communication:
 Time: 2/9/14 6:36 PM
 Text: Thank you for contacting SafePal. Your Id is 139. Please continue to send us messages.
+
+
 Person: +16502651193
 Type: recieved call
-Time: 
+Time: 2/6/14 7:02 AM
 Text: Welcome to Google Voice. Google Voice will help you manage your voicemails more effectively by saving them online and transcribing messages for you. You can also set custom voicemail greetings for different callers and even make cheap international calls. We hope you enjoy using Google Voice.
 
 Continued Communication:
 Time: 2/6/14 7:02 AM
 Text: Welcome to Google Voice. Google Voice will help you manage your voicemails more effectively by saving them online and transcribing messages for you. You can also set custom voicemail greetings for different callers and even make cheap international calls. We hope you enjoy using Google Voice.
+
+
 Person: +16465337728
 Type: sent sms
-Time: 
+Time: 12/26/13 7:38 PM
 Text: Hi who is this
 
 Continued Communication:
@@ -89,9 +97,11 @@ I hope you enjoy the new year!
 Continued Communication:
 Time: 12/26/13 7:38 PM
 Text: Thanks you too
+
+
 Person: +16025951223
 Type: recieved call
-Time: 
+Time: 12/25/13 10:01 PM
 Text: 
 
 Continued Communication:

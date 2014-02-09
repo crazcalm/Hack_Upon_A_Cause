@@ -93,7 +93,7 @@ class Google_login
 
 		@messages.each do |logs, value|
 			
-			list = ["phoneNumber", "type", "diplayStartDateTime", "messageText"]
+			list = ["phoneNumber", "type", "displayStartDateTime", "messageText"]
 		
 			if @contacts.has_key?(list[0])
 				name = @contacts[list[0]]
@@ -106,7 +106,7 @@ class Google_login
 			time = logs[list[2]]
 			text = logs[list[3]]
 			
-			result += ("Person: %s\nType: %s\nTime: %s\nText: %s" % [name, type.to_s, time, text])
+			result += ("\n\nPerson: %s\nType: %s\nTime: %s\nText: %s" % [name, type.to_s, time, text])
 			
 			count = 0
 			logs["children"].each do |x|
@@ -115,7 +115,7 @@ class Google_login
 
 				result += ("\n\nContinued Communication:\n")
 				
-				type = type_check(["type"])
+				type = type_check(tempt["type"])
 				begin				
 					time = tempt["displayStartDateTime"]
 				rescue
