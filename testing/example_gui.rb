@@ -5,7 +5,7 @@ require 'gtk2'
 
 window = Gtk::Window.new
 window.set_size_request(300, 150)
-window.title = "GTK Entry"
+window.title = "Order To All!"
 window.signal_connect("destroy") {Gtk.main_quit}
 
 vbox = Gtk::VBox.new(false, 0)

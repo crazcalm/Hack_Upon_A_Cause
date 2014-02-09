@@ -1,11 +1,12 @@
 
 
 Person: +19083708992
-Type: sent sms
+Type: recieved call
 Time: 2/9/14 6:55 PM
 Text: Miss you boo! How are you
 
 Continued Communication:
+Type: recieved call
 Time: 2/9/14 6:55 PM
 Text: Miss you boo! How are you
 
@@ -16,46 +17,53 @@ Time: 2/9/14 6:36 PM
 Text: Need sleep!
 
 Continued Communication:
+Type: recieved call
 Time: 2/9/14 6:36 PM
 Text: Need sleep!
 
 
 Continued Communication:
+Type: recieved call
 Time: 2/9/14 6:36 PM
 Text: Thank you for contacting SafePal. Your Id is 139. Please continue to send us messages.
 
 
 Person: +16502651193
-Type: recieved call
+Type: sent sms
 Time: 2/6/14 7:02 AM
 Text: Welcome to Google Voice. Google Voice will help you manage your voicemails more effectively by saving them online and transcribing messages for you. You can also set custom voicemail greetings for different callers and even make cheap international calls. We hope you enjoy using Google Voice.
 
 Continued Communication:
+Type: sent sms
 Time: 2/6/14 7:02 AM
 Text: Welcome to Google Voice. Google Voice will help you manage your voicemails more effectively by saving them online and transcribing messages for you. You can also set custom voicemail greetings for different callers and even make cheap international calls. We hope you enjoy using Google Voice.
 
 
 Person: +16465337728
-Type: sent sms
+Type: recieved call
 Time: 12/26/13 7:38 PM
 Text: Hi who is this
 
 Continued Communication:
+Type: recieved call
 Time: 12/26/13 5:45 PM
 Text: Hi who is this
 
 
 Continued Communication:
+Type: recieved call
 Time: 12/26/13 5:57 PM
 Text: Marcus
 
 
 Continued Communication:
+Type: recieved call
 Time: 12/26/13 5:58 PM
 Text: Not sure if I really know you because I lost my contacts. Marcus from where
 
 
 Continued Communication:
+Type: recieved call
 Time: 12/26/13 6:00 PM
 Text: Nj. 
 
@@ -63,31 +71,37 @@ What is your name?
 
 
 Continued Communication:
+Type: recieved call
 Time: 12/26/13 6:00 PM
 Text: Glenn 
 
 
 Continued Communication:
+Type: recieved call
 Time: 12/26/13 6:01 PM
 Text: Maybe you got the wrong number
 
 
 Continued Communication:
+Type: recieved call
 Time: 12/26/13 6:05 PM
 Text: We don't know each other. We know Pete. Our numbers were both in the initial mass "Merry Christmas" text. I replied to all, and thus texted you. 
 
 
 Continued Communication:
+Type: recieved call
 Time: 12/26/13 6:07 PM
 Text: Oh OK. I hate when people send out that mass text and everyone responds and you're not sure who those people are texting you
 
 
 Continued Communication:
+Type: recieved call
 Time: 12/26/13 6:08 PM
 Text: Well I hope you had a merry Christmas 
 
 
 Continued Communication:
+Type: recieved call
 Time: 12/26/13 6:09 PM
 Text: It was. Thanks 
 
@@ -95,15 +109,17 @@ I hope you enjoy the new year!
 
 
 Continued Communication:
+Type: recieved call
 Time: 12/26/13 7:38 PM
 Text: Thanks you too
 
 
 Person: +16025951223
-Type: recieved call
+Type: sent sms
 Time: 12/25/13 10:01 PM
 Text: 
 
 Continued Communication:
+Type: sent sms
 Time: 12/25/13 10:01 PM
 Text: 

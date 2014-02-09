@@ -116,6 +116,9 @@ class Google_login
 				result += ("\n\nContinued Communication:\n")
 				
 				type = type_check(tempt["type"])
+
+				result += ("Type: %s\n" % [type])
+
 				begin				
 					time = tempt["displayStartDateTime"]
 				rescue
