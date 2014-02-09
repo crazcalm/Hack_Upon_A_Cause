@@ -1,11 +1,12 @@
 require "mechanize"
 
 class Google_login
-	attr_accessor :email, :password, :agent, :contacts
+	attr_accessor :email, :password, :agent, :contacts, :messages
 
 	def initionalize(email = nil, password=nil)
 		@agent = Mechanize.new
 		@contacts = nil
+		@messages = []
 		
 		print "Email: "
 		@email = gets.chomp
@@ -33,10 +34,6 @@ class Google_login
 		id_keys = []
 		data["contacts"].each {|key, value| id_keys << key}
 
-		#puts "\n\nid_keys: "
-		#pp id_keys
-		#puts "\n"
-
 		new_hash = Hash.new
 		id_keys.each do |key|
 			tempt = data["contacts"][key]
@@ -44,23 +41,41 @@ class Google_login
 			if tempt.has_key?("phoneNumber")
 				future_key = tempt["phoneNumber"]
 				tempt2 = Hash.new
-				
-				#puts "\n\n\nDO YOU HAVE A KEY CALLED phoneNumber?!\n\n\n"
-
 			else
-				#puts "\n\n\nWTF?!\n\n\n"
 				next
-
 			end
 
 			list = ["name", "phoneTypeName", "displayNumber"]
 			list.each {|term| tempt2[term] = tempt[term]}
 			
-			#5.times {pp tempt2}
-			
 			new_hash[future_key] = tempt2
 		end
 	@contacts = new_hash
+	end
+
+	def messages_hash()
+		data = messages_json()
+
+		id_keys = []
+
+		data["messageList"].each do |hope|		
+
+			#5.times {puts hope.class, "\n\n\n"}
+
+			list = ["id", "type", "phoneNumber", "startTime", "displayStartDateTime",
+								 "displayStartTime", "messageText", "children"]
+			
+			tempt = Hash.new
+
+			list.each do |key|
+				tempt[key] = hope[key]
+			end
+			puts tempt, "\n\n"	
+			@messages << tempt
+
+			puts "messages:\n", messages, "\n\n"
+			@messages.sort_by! {|h| h["startTime"]}
+		end
 	end
 			
 
@@ -71,12 +86,25 @@ class Google_login
 	end 
 end
 
+=begin
+# This works!
 test = Google_login.new
 test.initionalize
 test.login
 test.contacts_hash
 puts "test.contacts"
 pp test.contacts
+=end
+
+test = Google_login.new
+test.initionalize
+test.login
+test.messages_hash
+puts "test.messages"
+pp test.messages
+
+
+
 
 
 
