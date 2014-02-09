@@ -102,33 +102,3 @@ test.login
 test.messages_hash
 puts "test.messages"
 pp test.messages
-
-
-
-
-
-
-
-=begin
-def contact_hash(json)
-
-	stack = []
-	json["contacts"].each do |key_1, key_2|
-		if key_2.has_key?("phoneNumber")
-			new_dict = key_2["phoneNumber"]
-			new_dict = Hash.new
-
-			list = ["name", "phoneTypeName", "displayNumber"]
-
-			list.each {|key| new_dict[key] = key_2[key]}
-			
-			stack << new_dict
-		else
-			puts "\n\nNothing to see here!\n\n"
-		end
-	stack
-	end
-end
-			 
-=end
-
