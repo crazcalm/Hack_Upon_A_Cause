@@ -33,7 +33,7 @@ hbox1.pack_start(pass_label, true, true, 0)
 
 pass = Gtk::Entry.new
 pass.max_length = 50
-pass.signal_connect("activate") {puts "Entry contents: #{pass.text}"}
+pass.signal_connect("activate"){puts "#{pass.text}"}
 pass.text = "Give me your password!"
 pass.visibility = false
 #entry.select_region(0, -2)
