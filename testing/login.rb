@@ -74,7 +74,9 @@ class Google_login
 			@messages << tempt
 
 			#puts "messages:\n", messages, "\n\n"
-			@messages.sort_by! {|h| h["startTime"]}
+			@messages.sort! {|a,b| b["startTime"] <=> a["startTime"] }
+			#@messages = Hash[@messages.to_a.reverse]
+			@messages
 		end
 	end
 			
@@ -86,9 +88,10 @@ class Google_login
 	end
 
 	def write_to_file
-		@messages.each do |logs, value|
 
-			#3.times {puts logs, "\n"}
+		result = ""
+
+		@messages.each do |logs, value|
 			
 			list = ["phoneNumber", "type", "diplayStartDateTime", "messageText"]
 		
@@ -98,89 +101,47 @@ class Google_login
 				name = logs[list[0]]
 			end
 	
-			#3.times {puts "Are you bloken?\n"}
-			
 			type = type_check(logs[list[1]])
-
-			#3.times {puts "Give me a clue!!\n"}	
 
 			time = logs[list[2]]
 			text = logs[list[3]]
-
-			#3.times {puts "Which one of you is being bad!\n"}
 			
-			result = ("Person: %s\nType: %s\nTime: %s\nText: %s" % [name, type.to_s, time, text])
-
-			#3.times {puts "Please tell me it ain't so!\n"}
+			result += ("Person: %s\nType: %s\nTime: %s\nText: %s" % [name, type.to_s, time, text])
 			
 			count = 0
 			logs["children"].each do |x|
 
-				#3.times{puts "Where are you!!!\n"}
-
 				tempt = x
 
-				
 				result += ("\n\nContinued Communication:\n")
 				
 				type = type_check(["type"])
-
-				#if type.type == String
-				#	type
-				#else
-				#	type = " "
-				#end
-	
-				#3.times {puts "Found you!!!\n"}
-
-				#result += ("Type: %s\n" % [type])
-
-				#3.times {puts "Type broken?\n"}
-
-				#if tempt["displayStartDateTime"].type == String
 				begin				
 					time = tempt["displayStartDateTime"]
 				rescue
 					time = ""
 				end
-				#else
-				#	time = ""
-				#end
 
-				#3.times {puts "Time broken?\n"}
+				result += ("Time: %s\n" % [time])
 
-				#result += ("Time: %s\n" % [time])
-
-				#if tempt["message"].type == String
 				begin
 					text = tempt["message"]
 				rescue
 					text = ""
 				end
-				#else
-				#	text = ""
-				#end				
-
-				#3.times{puts "Text broken?\n"}
 
 				result += ("Text: %s\n" % [text])
 				count += 1
 
-				#3.times {puts "WTF!!!!\n"}
-
-				#result += ("Type: %s\nTime: %s\nText: %s" % [type, time, text])
-
-				#3.times{puts "This is getting annoying\n"}
-
 				puts "#{result}\n"
 			end
-
-			File.open("test2.txt", "a") do |file|
-				file.puts result
-			end
+		end
+		File.open("test2.txt", "w+") do |file|
+			file.puts result
+			break
 		end
 	end
-	
+
 	def type_check(test)
 		if test == 2
 			type = "recieved call"

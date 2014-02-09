@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require_relative "login.rb"
+require_relative  "login.rb"
 require 'gtk2'
 
 window = Gtk::Window.new

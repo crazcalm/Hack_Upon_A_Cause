@@ -1,87 +1,99 @@
-Person: 32665113
+Person: +19083708992
 Type: sent sms
 Time: 
-Text: Mohan Wang added a photo of you on Facebook. http://fb.me/arba894gggNjE8 . 
-
-Reply with your comment or "like".
+Text: Miss you boo! How are you
 
 Continued Communication:
-Text: Mohan Wang added a photo of you on Facebook. http://fb.me/arba894gggNjE8 . 
-
-Reply with your comment or "like".
-Person: +12016542357
-Type: sent sms
-Time: 
-Text: Merry Christmas marcus
-
-Continued Communication:
-Text: Merry Christmas marcus
-
-
-Continued Communication:
-Text: Merry Christmas to you too!
-Person: +16025951223
+Time: 2/9/14 6:55 PM
+Text: Miss you boo! How are you
+Person: +16463623973
 Type: recieved call
 Time: 
-Text: 
+Text: Need sleep!
 
 Continued Communication:
-Text: 
-Person: +16465337728
-Type: sent sms
-Time: 
-Text: Hi who is this
-
-Continued Communication:
-Text: Hi who is this
+Time: 2/9/14 6:36 PM
+Text: Need sleep!
 
 
 Continued Communication:
-Text: Marcus
-
-
-Continued Communication:
-Text: Not sure if I really know you because I lost my contacts. Marcus from where
-
-
-Continued Communication:
-Text: Nj. 
-
-What is your name?
-
-
-Continued Communication:
-Text: Glenn 
-
-
-Continued Communication:
-Text: Maybe you got the wrong number
-
-
-Continued Communication:
-Text: We don't know each other. We know Pete. Our numbers were both in the initial mass "Merry Christmas" text. I replied to all, and thus texted you. 
-
-
-Continued Communication:
-Text: Oh OK. I hate when people send out that mass text and everyone responds and you're not sure who those people are texting you
-
-
-Continued Communication:
-Text: Well I hope you had a merry Christmas 
-
-
-Continued Communication:
-Text: It was. Thanks 
-
-I hope you enjoy the new year!
-
-
-Continued Communication:
-Text: Thanks you too
+Time: 2/9/14 6:36 PM
+Text: Thank you for contacting SafePal. Your Id is 139. Please continue to send us messages.
 Person: +16502651193
 Type: recieved call
 Time: 
 Text: Welcome to Google Voice. Google Voice will help you manage your voicemails more effectively by saving them online and transcribing messages for you. You can also set custom voicemail greetings for different callers and even make cheap international calls. We hope you enjoy using Google Voice.
 
 Continued Communication:
+Time: 2/6/14 7:02 AM
 Text: Welcome to Google Voice. Google Voice will help you manage your voicemails more effectively by saving them online and transcribing messages for you. You can also set custom voicemail greetings for different callers and even make cheap international calls. We hope you enjoy using Google Voice.
+Person: +16465337728
+Type: sent sms
+Time: 
+Text: Hi who is this
+
+Continued Communication:
+Time: 12/26/13 5:45 PM
+Text: Hi who is this
+
+
+Continued Communication:
+Time: 12/26/13 5:57 PM
+Text: Marcus
+
+
+Continued Communication:
+Time: 12/26/13 5:58 PM
+Text: Not sure if I really know you because I lost my contacts. Marcus from where
+
+
+Continued Communication:
+Time: 12/26/13 6:00 PM
+Text: Nj. 
+
+What is your name?
+
+
+Continued Communication:
+Time: 12/26/13 6:00 PM
+Text: Glenn 
+
+
+Continued Communication:
+Time: 12/26/13 6:01 PM
+Text: Maybe you got the wrong number
+
+
+Continued Communication:
+Time: 12/26/13 6:05 PM
+Text: We don't know each other. We know Pete. Our numbers were both in the initial mass "Merry Christmas" text. I replied to all, and thus texted you. 
+
+
+Continued Communication:
+Time: 12/26/13 6:07 PM
+Text: Oh OK. I hate when people send out that mass text and everyone responds and you're not sure who those people are texting you
+
+
+Continued Communication:
+Time: 12/26/13 6:08 PM
+Text: Well I hope you had a merry Christmas 
+
+
+Continued Communication:
+Time: 12/26/13 6:09 PM
+Text: It was. Thanks 
+
+I hope you enjoy the new year!
+
+
+Continued Communication:
+Time: 12/26/13 7:38 PM
+Text: Thanks you too
+Person: +16025951223
+Type: recieved call
+Time: 
+Text: 
+
+Continued Communication:
+Time: 12/25/13 10:01 PM
+Text: 
